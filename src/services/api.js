@@ -1,5 +1,5 @@
-const BASE_URL = "http://localhost:3000/agendamentos";
-
+const BASE_URL =
+  import.meta.env.VITE_API_URL || "http://localhost:3000/agendamentos";
 // BUSCAR TODOS (GET)
 export async function buscarAgendamentos() {
   const res = await fetch(BASE_URL);
